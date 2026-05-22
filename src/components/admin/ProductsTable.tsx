@@ -9,6 +9,7 @@ import DeleteProductButton from "@/components/admin/DeleteProductButton";
 interface ProductItem {
   id: string;
   name: string;
+  image: string | null;
   price: number;
   stock: number;
   active: boolean;
@@ -82,8 +83,16 @@ export default function ProductsTable({ products }: { products: ProductItem[] })
                   <tr key={product.id} className="border-b border-gray-50 last:border-0 hover:bg-gray-50/50">
                     <td className="px-5 py-4">
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center shrink-0">
-                          <Package className="w-5 h-5 text-gray-400" />
+                        <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center shrink-0 overflow-hidden">
+                          {product.image ? (
+                            <img
+                              src={product.image}
+                              alt={product.name}
+                              className="w-full h-full object-cover"
+                            />
+                          ) : (
+                            <Package className="w-5 h-5 text-gray-400" />
+                          )}
                         </div>
                         <div>
                           <p className="font-bold text-text-title">{product.name}</p>
