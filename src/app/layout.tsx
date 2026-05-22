@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     default: "NexoFarma | Tu Farmacia de Confianza en Rancagua",
     template: "%s | NexoFarma",
   },
-  description: "Farmacia online con despacho rápido en Chile. Medicamentos, dermocosmética, vitaminas y cuidado personal. Atención farmacéutica personalizada.",
+  description: "Tu farmacia de confianza en Rancagua. Medicamentos, dermocosmética, vitaminas y cuidado personal. Atención farmacéutica personalizada.",
   keywords: ["farmacia", "rancagua", "medicamentos", "dermocosmetica", "vitaminas", "chile"],
 };
 

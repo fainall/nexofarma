@@ -78,7 +78,7 @@ const quickSuggestions = [
   { label: "🤒 Tengo fiebre", text: "Tengo fiebre" },
   { label: "🤧 Resfriado", text: "Estoy resfriado" },
   { label: "📍 Horarios", text: "¿Cuál es el horario?" },
-  { label: "🚚 Despacho", text: "¿Hacen despacho?" },
+  { label: "📍 Ubicación", text: "¿Dónde están ubicados?" },
   { label: "💪 Vitaminas", text: "¿Qué vitaminas recomiendan?" },
 ];
 
@@ -105,7 +105,7 @@ const WELCOME_MSG = `¡Hola! 👋 Soy el **QF Virtual** de NexoFarma, tu asisten
 Puedo ayudarte con:
 • Información sobre **medicamentos** de venta libre
 • Recomendaciones para **síntomas comunes**
-• **Horarios**, ubicación y despacho
+• **Horarios** y ubicación
 • Consultas sobre **vitaminas** y suplementos
 
 ¿En qué puedo ayudarte hoy?`;

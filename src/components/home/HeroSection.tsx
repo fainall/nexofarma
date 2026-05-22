@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useMotionValue, useTransform, useSpring, useInView } from "framer-motion";
-import { Shield, UserCheck, ArrowRight, Star, Heart } from "lucide-react";
+import { Shield, UserCheck, ArrowRight, Star, Heart, PartyPopper } from "lucide-react";
 
 function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: string }) {
   const [count, setCount] = useState(0);
@@ -117,9 +117,9 @@ export default function HeroSection() {
             animate={mounted ? "visible" : "hidden"}
           >
             <motion.div variants={fadeUp} className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full hero-badge">
-              <span className="hero-badge-dot" />
+              <PartyPopper className="w-4 h-4 text-corp-cian" />
               <span className="text-xs font-bold uppercase tracking-widest text-corp-cian">
-                Muy pronto en Rancagua
+                Ya abrimos en Rancagua
               </span>
             </motion.div>
 

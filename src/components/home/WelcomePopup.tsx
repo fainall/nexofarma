@@ -44,10 +44,10 @@ export default function WelcomePopup() {
         />
 
         <h3 className="text-2xl font-black uppercase tracking-tight mb-2" style={{ color: "var(--color-text-title)" }}>
-          ¡Bienvenido a NexoFarma!
+          ¡Ya estamos abiertos!
         </h3>
         <p className="text-gray-500 text-sm leading-relaxed mb-6">
-          Muy pronto abriremos nuestras puertas en Rancagua. Descubre nuestros productos y aprovecha un <strong className="text-corp-cian">10% de descuento</strong> en tu primera compra.
+          Tu nueva farmacia de confianza en Rancagua ya abrió sus puertas. Descubre nuestros productos y aprovecha un <strong className="text-corp-cian">10% de descuento</strong> en tu primera compra.
         </p>
 
         <Link

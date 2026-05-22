@@ -18,7 +18,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
-              Tu farmacia de confianza en Rancagua. Salud integral para toda tu familia, con despacho rápido y atención personalizada.
+              Tu farmacia de confianza en Rancagua. Salud integral para toda tu familia, con atención personalizada y asesoría profesional.
             </p>
             <div className="flex items-center gap-3 mt-5">
               <a
