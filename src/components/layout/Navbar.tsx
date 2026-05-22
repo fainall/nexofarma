@@ -3,7 +3,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
-  ShoppingCart,
+  // ShoppingCart, // Hidden while store is in catalog-only mode
   Menu,
   X,
   ChevronDown,
@@ -22,7 +22,7 @@ import {
   ArrowRight,
   Store,
 } from "lucide-react";
-import { useCartStore } from "@/store/cartStore";
+// import { useCartStore } from "@/store/cartStore"; // Hidden while store is in catalog-only mode
 import { cn } from "@/lib/utils";
 
 /* ─── Icon map ─── */
@@ -79,7 +79,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const itemCount = useCartStore((s) => s.getItemCount());
+  // const itemCount = useCartStore((s) => s.getItemCount()); // Hidden while store is in catalog-only mode
   const megaRef = useRef<HTMLDivElement>(null);
   const megaTimeout = useRef<NodeJS.Timeout | null>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
