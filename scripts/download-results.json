@@ -1,0 +1,379 @@
+{
+  "success": 93,
+  "failed": 0,
+  "downloaded": [
+    {
+      "slug": "pulsera-led-running-color-fucsia",
+      "file": "pulsera-led-running-color-fucsia.jpg"
+    },
+    {
+      "slug": "pulsera-led-running-color-verde",
+      "file": "pulsera-led-running-color-verde.webp"
+    },
+    {
+      "slug": "pulsera-led-running-color-amarillo",
+      "file": "pulsera-led-running-color-amarillo.jpg"
+    },
+    {
+      "slug": "pulsera-led-running-color-rojo",
+      "file": "pulsera-led-running-color-rojo.jpg"
+    },
+    {
+      "slug": "ncl-collagen-peptides-20-oz-en-polvo-teal-567-gr",
+      "file": "ncl-collagen-peptides-20-oz-en-polvo-teal-567-gr.jpg"
+    },
+    {
+      "slug": "ncl-collagen-peptides-10-oz-en-polvo-teal-283-gr",
+      "file": "ncl-collagen-peptides-10-oz-en-polvo-teal-283-gr.jpg"
+    },
+    {
+      "slug": "ncl-collagen-liquid-pomegranate-16oz-liquid-473-ml",
+      "file": "ncl-collagen-liquid-pomegranate-16oz-liquid-473-ml.jpg"
+    },
+    {
+      "slug": "ncl-super-collagen-peptides-stick-packs-20-stick-packs-en-polvo",
+      "file": "ncl-super-collagen-peptides-stick-packs-20-stick-packs-en-polvo.jpg"
+    },
+    {
+      "slug": "nv-calm-original-sin-sabor-en-polvo-227-gr",
+      "file": "nv-calm-original-sin-sabor-en-polvo-227-gr.jpg"
+    },
+    {
+      "slug": "nv-calm-magnesium-en-capsulas-120-veggie-caps",
+      "file": "nv-calm-magnesium-en-capsulas-120-veggie-caps.jpg"
+    },
+    {
+      "slug": "nv-calm-raspberry-lemon-en-polvo-227-gr",
+      "file": "nv-calm-raspberry-lemon-en-polvo-227-gr.jpg"
+    },
+    {
+      "slug": "wood-look-difusor",
+      "file": "wood-look-difusor.jpg"
+    },
+    {
+      "slug": "pure-peace-aceite-esencial-15ml",
+      "file": "pure-peace-aceite-esencial-15ml.png"
+    },
+    {
+      "slug": "pure-breathe-easy-aceite-esencial-15ml",
+      "file": "pure-breathe-easy-aceite-esencial-15ml.png"
+    },
+    {
+      "slug": "pure-good-nite-aceite-esencial-15ml",
+      "file": "pure-good-nite-aceite-esencial-15ml.jpg"
+    },
+    {
+      "slug": "pure-calming-aceite-esencial-15ml",
+      "file": "pure-calming-aceite-esencial-15ml.png"
+    },
+    {
+      "slug": "complejo-triple-magnesio-100-capsulas",
+      "file": "complejo-triple-magnesio-100-capsulas.jpg"
+    },
+    {
+      "slug": "colageno-biotina-liquido-237ml",
+      "file": "colageno-biotina-liquido-237ml.jpg"
+    },
+    {
+      "slug": "omega-3-fish-oil-2000mg-250-capsulas-blandas",
+      "file": "omega-3-fish-oil-2000mg-250-capsulas-blandas.webp"
+    },
+    {
+      "slug": "calcio-magnesio-zinc-90-tabletas",
+      "file": "calcio-magnesio-zinc-90-tabletas.jpg"
+    },
+    {
+      "slug": "gomitas-de-vinagre-de-manzana-75-gomitas",
+      "file": "gomitas-de-vinagre-de-manzana-75-gomitas.jpg"
+    },
+    {
+      "slug": "magnesio-zinc",
+      "file": "magnesio-zinc.jpg"
+    },
+    {
+      "slug": "omega-3-fish-oil",
+      "file": "omega-3-fish-oil.jpg"
+    },
+    {
+      "slug": "vitamina-c-1000mg",
+      "file": "vitamina-c-1000mg.jpg"
+    },
+    {
+      "slug": "vegan-protein-zero-sugar-vainilla-macaroon-500g",
+      "file": "vegan-protein-zero-sugar-vainilla-macaroon-500g.jpg"
+    },
+    {
+      "slug": "vegan-protein-zero-sugar-chocolate-muffin-500g",
+      "file": "vegan-protein-zero-sugar-chocolate-muffin-500g.jpg"
+    },
+    {
+      "slug": "protein-pancake-37-protein-apple-cinnamon-500g-16-servicios",
+      "file": "protein-pancake-37-protein-apple-cinnamon-500g-16-servicios.jpg"
+    },
+    {
+      "slug": "protein-pancake-37-protein-banana-500g-16-servicios",
+      "file": "protein-pancake-37-protein-banana-500g-16-servicios.jpg"
+    },
+    {
+      "slug": "protein-pancake-37-protein-blueberry-500g-16-servicios",
+      "file": "protein-pancake-37-protein-blueberry-500g-16-servicios.jpg"
+    },
+    {
+      "slug": "protein-pancake-37-protein-chocolate-500g-16-servicios",
+      "file": "protein-pancake-37-protein-chocolate-500g-16-servicios.jpg"
+    },
+    {
+      "slug": "protein-pancake-37-protein-sin-sabor-500g-16-servicios",
+      "file": "protein-pancake-37-protein-sin-sabor-500g-16-servicios.jpg"
+    },
+    {
+      "slug": "whey-protein-light-digest-vainilla-500g",
+      "file": "whey-protein-light-digest-vainilla-500g.jpg"
+    },
+    {
+      "slug": "whey-protein-light-digest-chocolate-blanco-500g",
+      "file": "whey-protein-light-digest-chocolate-blanco-500g.jpg"
+    },
+    {
+      "slug": "whey-protein-light-digest-pistacho-500g",
+      "file": "whey-protein-light-digest-pistacho-500g.webp"
+    },
+    {
+      "slug": "whey-protein-light-digest-creme-brulee-500g",
+      "file": "whey-protein-light-digest-creme-brulee-500g.jpg"
+    },
+    {
+      "slug": "whey-protein-light-digest-coco-500g",
+      "file": "whey-protein-light-digest-coco-500g.jpg"
+    },
+    {
+      "slug": "whey-protein-light-digest-chocolate-belga-500g",
+      "file": "whey-protein-light-digest-chocolate-belga-500g.jpg"
+    },
+    {
+      "slug": "protein-snack-bar-caramel-peanut-nuevo-12-x-60g",
+      "file": "protein-snack-bar-caramel-peanut-nuevo-12-x-60g.jpg"
+    },
+    {
+      "slug": "36-protein-joy-bar-vainilla-12-x-60g",
+      "file": "36-protein-joy-bar-vainilla-12-x-60g.webp"
+    },
+    {
+      "slug": "36-protein-joy-bar-chocolate-cookie-12-x-60g",
+      "file": "36-protein-joy-bar-chocolate-cookie-12-x-60g.jpg"
+    },
+    {
+      "slug": "36-protein-joy-bar-caramelo-12-x-60g",
+      "file": "36-protein-joy-bar-caramelo-12-x-60g.png"
+    },
+    {
+      "slug": "28-protein-milkii-bar-coco-12-x-60g",
+      "file": "28-protein-milkii-bar-coco-12-x-60g.webp"
+    },
+    {
+      "slug": "oblea-32-protein-wafer-bar-vainilla-yoghurt-12-x-35g",
+      "file": "oblea-32-protein-wafer-bar-vainilla-yoghurt-12-x-35g.jpg"
+    },
+    {
+      "slug": "oblea-32-protein-wafer-bar-chocolate-belga-12-x-35g",
+      "file": "oblea-32-protein-wafer-bar-chocolate-belga-12-x-35g.jpg"
+    },
+    {
+      "slug": "40-26g-protein-crunchy-bar-frutilla-12-x-65g",
+      "file": "40-26g-protein-crunchy-bar-frutilla-12-x-65g.webp"
+    },
+    {
+      "slug": "40-26g-protein-crunchy-bar-chocolate-12-x-65g",
+      "file": "40-26g-protein-crunchy-bar-chocolate-12-x-65g.jpg"
+    },
+    {
+      "slug": "protein-water-raspberry-peach-330ml-nuevo-12-x-330ml",
+      "file": "protein-water-raspberry-peach-330ml-nuevo-12-x-330ml.jpg"
+    },
+    {
+      "slug": "protein-water-lemon-ginger-330ml-nuevo-12-x-330ml",
+      "file": "protein-water-lemon-ginger-330ml-nuevo-12-x-330ml.webp"
+    },
+    {
+      "slug": "protein-shake-tetra-25g-vainilla-12-x-330ml",
+      "file": "protein-shake-tetra-25g-vainilla-12-x-330ml.jpg"
+    },
+    {
+      "slug": "protein-shake-tetra-25g-frutilla-12-x-330ml",
+      "file": "protein-shake-tetra-25g-frutilla-12-x-330ml.jpg"
+    },
+    {
+      "slug": "sport-water-12-x-500ml",
+      "file": "sport-water-12-x-500ml.jpg"
+    },
+    {
+      "slug": "bcaa-8000-zero-calories-frutos-del-bosque-12-x-700ml",
+      "file": "bcaa-8000-zero-calories-frutos-del-bosque-12-x-700ml.jpg"
+    },
+    {
+      "slug": "shot-magnesio-sport-12-x-80ml",
+      "file": "shot-magnesio-sport-12-x-80ml.png"
+    },
+    {
+      "slug": "shot-guarana-kick-2000mg-12-x-80ml",
+      "file": "shot-guarana-kick-2000mg-12-x-80ml.png"
+    },
+    {
+      "slug": "energel-frutos-rojos-25-x-55ml",
+      "file": "energel-frutos-rojos-25-x-55ml.webp"
+    },
+    {
+      "slug": "l-carnitina-liquida-frutos-rojos-500ml",
+      "file": "l-carnitina-liquida-frutos-rojos-500ml.png"
+    },
+    {
+      "slug": "l-glutamina-6000-350g",
+      "file": "l-glutamina-6000-350g.jpg"
+    },
+    {
+      "slug": "creatina-monohidratada-100-pure-300g",
+      "file": "creatina-monohidratada-100-pure-300g.png"
+    },
+    {
+      "slug": "creatina-monohidratada-100-pure-200-tabletas",
+      "file": "creatina-monohidratada-100-pure-200-tabletas.jpg"
+    },
+    {
+      "slug": "shaker-qnt-negro-600ml",
+      "file": "shaker-qnt-negro-600ml.jpg"
+    },
+    {
+      "slug": "bcaa-matrix-4800-200-tabletas",
+      "file": "bcaa-matrix-4800-200-tabletas.jpg"
+    },
+    {
+      "slug": "bcaa-8500-powder-limon-350g",
+      "file": "bcaa-8500-powder-limon-350g.jpg"
+    },
+    {
+      "slug": "bcaa-8500-powder-naranja-350g",
+      "file": "bcaa-8500-powder-naranja-350g.jpg"
+    },
+    {
+      "slug": "pre-workout-pump-rx-sin-cafeina-300g",
+      "file": "pre-workout-pump-rx-sin-cafeina-300g.jpg"
+    },
+    {
+      "slug": "pre-workout-overdrive-mango-390g",
+      "file": "pre-workout-overdrive-mango-390g.jpg"
+    },
+    {
+      "slug": "prime-whey-100-whey-isolate-concentrate-vainilla-2kg",
+      "file": "prime-whey-100-whey-isolate-concentrate-vainilla-2kg.jpg"
+    },
+    {
+      "slug": "prime-whey-100-whey-isolate-concentrate-chocolate-brownie-2-kg-2kg",
+      "file": "prime-whey-100-whey-isolate-concentrate-chocolate-brownie-2-kg-2kg.png"
+    },
+    {
+      "slug": "prime-whey-100-whey-isolate-concentrate-banana-2kg",
+      "file": "prime-whey-100-whey-isolate-concentrate-banana-2kg.jpg"
+    },
+    {
+      "slug": "prime-whey-100-whey-isolate-concentrate-frutilla-908g",
+      "file": "prime-whey-100-whey-isolate-concentrate-frutilla-908g.jpg"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-frambuesa-30g",
+      "file": "metapure-whey-isolate-zero-frambuesa-30g.jpg"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-pistacho-30g",
+      "file": "metapure-whey-isolate-zero-pistacho-30g.jpg"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-mango-30g",
+      "file": "metapure-whey-isolate-zero-mango-30g.webp"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-chocolate-avellana-30g",
+      "file": "metapure-whey-isolate-zero-chocolate-avellana-30g.webp"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-banana-30g",
+      "file": "metapure-whey-isolate-zero-banana-30g.jpg"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-vainilla-30g",
+      "file": "metapure-whey-isolate-zero-vainilla-30g.webp"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-chocolate-belga-30g",
+      "file": "metapure-whey-isolate-zero-chocolate-belga-30g.png"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-chocolate-avellana-2kg",
+      "file": "metapure-whey-isolate-zero-chocolate-avellana-2kg.webp"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-banana-2kg",
+      "file": "metapure-whey-isolate-zero-banana-2kg.jpg"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-chocolate-belga-2kg",
+      "file": "metapure-whey-isolate-zero-chocolate-belga-2kg.jpg"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-vainilla-2kg",
+      "file": "metapure-whey-isolate-zero-vainilla-2kg.jpg"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-frambuesa-908g",
+      "file": "metapure-whey-isolate-zero-frambuesa-908g.jpg"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-chocolate-avellana-908g",
+      "file": "metapure-whey-isolate-zero-chocolate-avellana-908g.jpg"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-banana-908g",
+      "file": "metapure-whey-isolate-zero-banana-908g.jpg"
+    },
+    {
+      "slug": "metapure-whey-isolate-zero-chocolate-belga-908g",
+      "file": "metapure-whey-isolate-zero-chocolate-belga-908g.jpg"
+    },
+    {
+      "slug": "protector-solar-spf50-200ml",
+      "file": "protector-solar-spf50-200ml.jpg"
+    },
+    {
+      "slug": "shampoo-anticaida-400ml",
+      "file": "shampoo-anticaida-400ml.jpg"
+    },
+    {
+      "slug": "agua-micelar-400ml",
+      "file": "agua-micelar-400ml.png"
+    },
+    {
+      "slug": "crema-hidratante-facial-spf30",
+      "file": "crema-hidratante-facial-spf30.jpg"
+    },
+    {
+      "slug": "serum-vitamina-c-30ml",
+      "file": "serum-vitamina-c-30ml.jpg"
+    },
+    {
+      "slug": "omeprazol-20mg",
+      "file": "omeprazol-20mg.jpg"
+    },
+    {
+      "slug": "loratadina-10mg",
+      "file": "loratadina-10mg.jpg"
+    },
+    {
+      "slug": "paracetamol-500mg",
+      "file": "paracetamol-500mg.jpg"
+    },
+    {
+      "slug": "ibuprofeno-400mg",
+      "file": "ibuprofeno-400mg.jpg"
+    }
+  ],
+  "failedProducts": []
+}

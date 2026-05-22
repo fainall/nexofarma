@@ -26,13 +26,22 @@ export async function POST(req: NextRequest) {
     const ext = file.name.split(".").pop() || "jpg";
     const filename = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}.${ext}`;
 
-    const uploadDir = path.join(process.cwd(), "public", "uploads");
-    await mkdir(uploadDir, { recursive: true });
+    // Save to images/products/ so it's consistent with existing product images
+    const dirs = [
+      path.join(process.cwd(), "public", "images", "products"),
+      "/home/kitpanel/public_html/nexofarma.cl/images/products",
+    ];
 
-    const filepath = path.join(uploadDir, filename);
-    await writeFile(filepath, buffer);
+    for (const dir of dirs) {
+      try {
+        await mkdir(dir, { recursive: true });
+        await writeFile(path.join(dir, filename), buffer);
+      } catch (e) {
+        console.error(`Failed to write to ${dir}:`, e);
+      }
+    }
 
-    return NextResponse.json({ path: `/uploads/${filename}` }, { status: 201 });
+    return NextResponse.json({ path: `/images/products/${filename}` }, { status: 201 });
   } catch (error) {
     console.error("Upload error:", error);
     return NextResponse.json({ error: "Error al subir archivo" }, { status: 500 });

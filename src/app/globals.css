@@ -553,59 +553,50 @@ body {
   }
 }
 
-/* Mobile elite cards */
+/* Mobile elite cards — stacked vertical */
 @media (max-width: 639px) {
   .elite-container {
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-padding-left: 15px;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 16px;
-    gap: 12px;
+    flex-direction: column;
+    gap: 14px;
     height: auto;
-    scrollbar-width: none;
+    overflow: visible;
   }
-  .elite-container::-webkit-scrollbar { display: none; }
   .elite-card {
-    flex: 0 0 78%;
-    min-width: 250px;
-    max-width: 300px;
-    height: 320px;
-    scroll-snap-align: start;
-    border-radius: 16px;
+    flex: none;
+    width: 100%;
+    height: 220px;
+    border-radius: 18px;
   }
-  .elite-card-title { font-size: 1.1rem !important; }
-  .elite-desc { opacity: 1 !important; max-height: 80px !important; margin-top: 8px; font-size: 0.8rem; }
-  .elite-action { opacity: 1 !important; transform: translateX(0) !important; margin-top: 10px; font-size: 0.8rem; }
+  .elite-card:hover {
+    flex: none;
+  }
+  .elite-card-title { font-size: 1.15rem !important; }
+  .elite-desc { opacity: 1 !important; max-height: 80px !important; margin-top: 6px; font-size: 0.8rem; }
+  .elite-action { opacity: 1 !important; transform: translateX(0) !important; margin-top: 8px; font-size: 0.8rem; }
   .elite-top-badge { opacity: 1 !important; transform: translateY(0) !important; font-size: 0.65rem; }
-  .elite-content { padding: 20px 16px; }
+  .elite-content { padding: 20px 18px; }
   .elite-icon-glass { width: 34px; height: 34px; min-width: 34px; }
 }
+/* Tablet elite cards — 2-column grid */
 @media (min-width: 640px) and (max-width: 1023px) {
   .elite-container {
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-padding-left: 15px;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 20px;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
     height: auto;
-    scrollbar-width: none;
+    overflow: visible;
   }
-  .elite-container::-webkit-scrollbar { display: none; }
   .elite-card {
-    flex: 0 0 60%;
-    min-width: 280px;
-    max-width: 400px;
-    height: 380px;
-    scroll-snap-align: start;
+    flex: none;
+    height: 280px;
     border-radius: 20px;
   }
-  .elite-card-title { font-size: 1.4rem !important; }
-  .elite-desc { opacity: 1 !important; max-height: 100px !important; margin-top: 10px; }
-  .elite-action { opacity: 1 !important; transform: translateX(0) !important; margin-top: 15px; }
+  .elite-card:hover {
+    flex: none;
+  }
+  .elite-card-title { font-size: 1.25rem !important; }
+  .elite-desc { opacity: 1 !important; max-height: 100px !important; margin-top: 8px; }
+  .elite-action { opacity: 1 !important; transform: translateX(0) !important; margin-top: 12px; }
   .elite-top-badge { opacity: 1 !important; transform: translateY(0) !important; }
 }
 

@@ -1,6 +1,6 @@
 "use client";
 import { useState, useRef, useEffect, Fragment } from "react";
-import { Bot, X, Send, Loader2, Pill, Stethoscope } from "lucide-react";
+import { X, Send, Pill, Stethoscope } from "lucide-react";
 import { ChatMessage } from "@/types";
 import { cn } from "@/lib/utils";
 import Image from "next/image";

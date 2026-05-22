@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Upload, X, Image as ImageIcon } from "lucide-react";
+import { Upload, X } from "lucide-react";
 import Input from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Input";
 import Button from "@/components/ui/Button";
@@ -149,8 +149,17 @@ export default function ProductForm({ categories, product }: Props) {
 
         {image ? (
           <div className="relative inline-block">
-            <div className="w-40 h-40 bg-gray-100 rounded-xl flex items-center justify-center">
-              <ImageIcon className="w-12 h-12 text-gray-400" />
+            <div className="w-40 h-40 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={image}
+                alt="Imagen del producto"
+                className="w-full h-full object-contain"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).style.display = "none";
+                  (e.target as HTMLImageElement).parentElement!.innerHTML = '<div class="flex items-center justify-center w-full h-full"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg></div>';
+                }}
+              />
             </div>
             <button
               type="button"

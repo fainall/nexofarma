@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState, useCallback } from "react";
-import { Mail, MailOpen, Search, Loader2, Trash2, Eye, X, Clock, User, Phone } from "lucide-react";
+import { Mail, MailOpen, Loader2, Trash2, Eye, X, Clock, Phone } from "lucide-react";
 
 interface Message {
   id: string;
