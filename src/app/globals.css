@@ -764,7 +764,7 @@ body {
 /* Pharmacist image */
 .hero-pharmacist-img {
   width: auto;
-  height: 95%;
+  height: 123%;
   max-width: none;
   object-fit: contain;
   object-position: bottom center;

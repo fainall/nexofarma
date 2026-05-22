@@ -205,8 +205,8 @@ export default function HeroSection() {
               <Image
                 src="/images/farmaceutica.png"
                 alt="Químico Farmacéutico NexoFarma"
-                width={420}
-                height={530}
+                width={546}
+                height={689}
                 className="hero-pharmacist-img"
                 priority
               />
