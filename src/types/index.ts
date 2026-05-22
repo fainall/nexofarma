@@ -45,12 +45,25 @@ export interface Order {
   shippingCity: string;
   shippingRegion: string;
   notes: string | null;
+  qfNotes: string | null;
+  trackingNumber: string | null;
+  trackingUrl: string | null;
+  invoiceUrl: string | null;
   subtotal: number;
   shippingCost: number;
   total: number;
   items?: OrderItem[];
+  statusHistory?: StatusChange[];
   createdAt: string;
   updatedAt: string;
+}
+
+export interface StatusChange {
+  id: string;
+  fromStatus: string;
+  toStatus: string;
+  note: string | null;
+  createdAt: string;
 }
 
 export interface OrderItem {
@@ -77,12 +90,13 @@ export interface ChatMessage {
   content: string;
 }
 
-export type OrderStatus = "pendiente" | "confirmado" | "enviado" | "entregado" | "cancelado";
+export type OrderStatus = "pendiente" | "confirmado" | "preparacion" | "despachado" | "entregado" | "cancelado";
 
 export const ORDER_STATUS_LABELS: Record<OrderStatus, string> = {
   pendiente: "Pendiente",
   confirmado: "Confirmado",
-  enviado: "Enviado",
+  preparacion: "En Preparación",
+  despachado: "Despachado",
   entregado: "Entregado",
   cancelado: "Cancelado",
 };
@@ -90,7 +104,8 @@ export const ORDER_STATUS_LABELS: Record<OrderStatus, string> = {
 export const ORDER_STATUS_COLORS: Record<OrderStatus, string> = {
   pendiente: "bg-yellow-100 text-yellow-800",
   confirmado: "bg-blue-100 text-blue-800",
-  enviado: "bg-purple-100 text-purple-800",
+  preparacion: "bg-orange-100 text-orange-800",
+  despachado: "bg-purple-100 text-purple-800",
   entregado: "bg-green-100 text-green-800",
   cancelado: "bg-red-100 text-red-800",
 };

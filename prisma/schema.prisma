@@ -58,12 +58,27 @@ model Order {
   shippingCity    String
   shippingRegion  String
   notes           String?
+  qfNotes         String?
+  trackingNumber  String?
+  trackingUrl     String?
+  invoiceUrl      String?
   subtotal        Int
   shippingCost    Int         @default(0)
   total           Int
   items           OrderItem[]
+  statusHistory   StatusChange[]
   createdAt       DateTime    @default(now())
   updatedAt       DateTime    @updatedAt
+}
+
+model StatusChange {
+  id        String   @id @default(cuid())
+  fromStatus String
+  toStatus   String
+  note      String?
+  orderId   String
+  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
 }
 
 model OrderItem {

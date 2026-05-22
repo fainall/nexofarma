@@ -6,7 +6,8 @@ import { useToast } from "@/components/ui/Toast";
 const statuses = [
   { value: "pendiente", label: "Pendiente" },
   { value: "confirmado", label: "Confirmado" },
-  { value: "enviado", label: "Enviado" },
+  { value: "preparacion", label: "En Preparación" },
+  { value: "despachado", label: "Despachado" },
   { value: "entregado", label: "Entregado" },
   { value: "cancelado", label: "Cancelado" },
 ];
