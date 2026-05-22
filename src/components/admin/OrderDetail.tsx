@@ -1,6 +1,5 @@
 "use client";
 import { useState, useRef } from "react";
-import { useRouter } from "next/navigation";
 import { useToast } from "@/components/ui/Toast";
 import { formatCLP } from "@/lib/utils";
 import { Order } from "@/types";
@@ -49,7 +48,6 @@ export default function OrderDetail({ order: initialOrder }: OrderDetailProps) {
   const [uploadingInvoice, setUploadingInvoice] = useState(false);
   const [sendingInvoice, setSendingInvoice] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const router = useRouter();
   const { showToast } = useToast();
 
   const currentConfig = STATUS_CONFIG[order.status] || STATUS_CONFIG.pendiente;

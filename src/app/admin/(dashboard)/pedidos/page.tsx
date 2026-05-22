@@ -1,6 +1,6 @@
 import { prisma } from "@/lib/prisma";
 import Link from "next/link";
-import { ShoppingBag, Clock, CheckCircle2, Truck, Package } from "lucide-react";
+import { ShoppingBag, Clock, CheckCircle2, Truck } from "lucide-react";
 import { formatCLP } from "@/lib/utils";
 import PedidosFilters from "@/components/admin/PedidosFilters";
 
