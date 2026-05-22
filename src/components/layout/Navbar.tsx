@@ -348,8 +348,8 @@ export default function Navbar() {
                 <Search className="w-5 h-5" />
               </button>
 
-              {/* Cart */}
-              <Link
+              {/* Cart - hidden while store is in catalog-only mode */}
+              {/* <Link
                 href="/carrito"
                 className="relative p-2.5 hover:bg-gray-100 rounded-xl transition-colors"
               >
@@ -359,7 +359,7 @@ export default function Navbar() {
                     {itemCount}
                   </span>
                 )}
-              </Link>
+              </Link> */}
 
               {/* Mobile menu toggle */}
               <button

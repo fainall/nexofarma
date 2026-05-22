@@ -88,8 +88,6 @@ export default function ShopFilters({ categories, currentCategory, currentSearch
           className="input-field text-sm"
         >
           <option value="">Más recientes</option>
-          <option value="precio-asc">Precio: menor a mayor</option>
-          <option value="precio-desc">Precio: mayor a menor</option>
           <option value="nombre">Nombre A-Z</option>
         </select>
       </div>
