@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useMotionValue, useTransform, useSpring, useInView } from "framer-motion";
-import { Shield, Truck, ArrowRight, Star, Heart } from "lucide-react";
+import { Shield, UserCheck, ArrowRight, Star, Heart } from "lucide-react";
 
 function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: string }) {
   const [count, setCount] = useState(0);
@@ -154,7 +154,7 @@ export default function HeroSection() {
             </motion.h1>
 
             <motion.p variants={fadeUp} className="text-base md:text-lg text-gray-500 max-w-md leading-relaxed">
-              Salud integral para tu familia. Elevamos el estándar farmacéutico con despacho rápido, atención personalizada y asesoría profesional.
+              Salud integral para tu familia. Elevamos el estándar farmacéutico con atención personalizada, productos de calidad y asesoría profesional.
             </motion.p>
 
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -175,8 +175,8 @@ export default function HeroSection() {
               </div>
               <div className="hero-stat-divider" />
               <div className="hero-stat">
-                <span className="hero-stat-number"><AnimatedCounter target={24} suffix="h" /></span>
-                <span className="hero-stat-label">Despacho</span>
+                <span className="hero-stat-number"><AnimatedCounter target={10} suffix="+" /></span>
+                <span className="hero-stat-label">Años exp.</span>
               </div>
               <div className="hero-stat-divider" />
               <div className="hero-stat">
@@ -230,7 +230,7 @@ export default function HeroSection() {
               </div>
             </motion.div>
 
-            {/* Floating Card 2 — Despacho (right-middle) */}
+            {/* Floating Card 2 — Asesoría (right-middle) */}
             <motion.div
               className="hero-floating-card hero-fc-2"
               variants={floatingCard(0.8)}
@@ -240,11 +240,11 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
             >
               <div className="hero-card-icon">
-                <Truck className="w-5 h-5 text-white" />
+                <UserCheck className="w-5 h-5 text-white" />
               </div>
               <div>
-                <p className="font-bold text-sm text-white">Despacho 24h</p>
-                <p className="text-[11px] text-white/70">Rápido y seguro</p>
+                <p className="font-bold text-sm text-white">Asesoría QF</p>
+                <p className="text-[11px] text-white/70">Atención profesional</p>
               </div>
             </motion.div>
 

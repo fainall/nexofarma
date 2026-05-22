@@ -174,8 +174,6 @@ export default function Navbar() {
               <span>📱 +56 963 301 6418</span>
             </div>
             <div className="flex items-center gap-4 text-[11px] text-white/90 font-medium">
-              <span>🚚 Despacho 24h en Rancagua</span>
-              <span className="w-px h-3 bg-white/30" />
               <span>Lun-Sáb 09:00-21:00</span>
             </div>
           </div>
@@ -511,13 +509,13 @@ export default function Navbar() {
 
             {/* Mobile promo bar */}
             <div className="mt-3 mx-1 bg-gradient-corp rounded-xl px-4 py-3 flex items-center gap-3">
-              <span className="text-xl">🚚</span>
+              <span className="text-xl">💚</span>
               <div>
                 <p className="text-xs font-bold text-white">
-                  Despacho 24h en Rancagua
+                  Tu farmacia de confianza
                 </p>
                 <p className="text-[10px] text-white/70">
-                  Envíos a todo Chile
+                  Asesoría profesional en Rancagua
                 </p>
               </div>
             </div>

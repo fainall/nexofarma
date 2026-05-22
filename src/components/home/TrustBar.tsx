@@ -1,10 +1,10 @@
-import { Truck, Shield, UserCheck, CheckCircle } from "lucide-react";
+import { Heart, Shield, UserCheck, CheckCircle } from "lucide-react";
 
 const items = [
-  { icon: Truck, title: "Envíos a todo Chile", desc: "Despacho rápido y seguro a todo el país" },
-  { icon: Shield, title: "Pago Seguro", desc: "Webpay / Transferencia bancaria" },
+  { icon: Heart, title: "Salud Integral", desc: "Cuidamos tu bienestar y el de tu familia" },
+  { icon: Shield, title: "Productos Certificados", desc: "Laboratorios certificados ISP" },
   { icon: UserCheck, title: "Asesoría QF", desc: "Consultas con químicos farmacéuticos" },
-  { icon: CheckCircle, title: "Calidad Garantizada", desc: "Laboratorios certificados ISP" },
+  { icon: CheckCircle, title: "Calidad Garantizada", desc: "Estándares farmacéuticos profesionales" },
 ];
 
 export default function TrustBar() {

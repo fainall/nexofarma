@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { MessageCircle, ArrowLeft, Package, Shield, Truck } from "lucide-react";
+import { MessageCircle, ArrowLeft, Package, Heart, CheckCircle } from "lucide-react";
 import { Product } from "@/types";
 import ProductCard from "./ProductCard";
 
@@ -63,16 +63,16 @@ export default function ProductDetailClient({ product, relatedProducts }: Props)
 
           <div className="grid grid-cols-3 gap-4 mt-10 pt-8 border-t border-gray-100">
             <div className="text-center">
-              <Truck className="w-6 h-6 text-corp-verde mx-auto mb-2" />
-              <p className="text-xs font-semibold text-gray-600">Envío rápido</p>
+              <CheckCircle className="w-6 h-6 text-corp-verde mx-auto mb-2" />
+              <p className="text-xs font-semibold text-gray-600">Calidad garantizada</p>
             </div>
             <div className="text-center">
-              <Shield className="w-6 h-6 text-corp-verde mx-auto mb-2" />
-              <p className="text-xs font-semibold text-gray-600">Pago seguro</p>
+              <Heart className="w-6 h-6 text-corp-verde mx-auto mb-2" />
+              <p className="text-xs font-semibold text-gray-600">Asesoría profesional</p>
             </div>
             <div className="text-center">
               <Package className="w-6 h-6 text-corp-verde mx-auto mb-2" />
-              <p className="text-xs font-semibold text-gray-600">Calidad garantizada</p>
+              <p className="text-xs font-semibold text-gray-600">Productos certificados</p>
             </div>
           </div>
         </div>
