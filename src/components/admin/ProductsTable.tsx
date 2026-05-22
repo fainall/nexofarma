@@ -1,6 +1,5 @@
 "use client";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Package, Search } from "lucide-react";
 import { formatCLP } from "@/lib/utils";
@@ -18,25 +17,45 @@ interface ProductItem {
 }
 
 export default function ProductsTable({ products }: { products: ProductItem[] }) {
-  const router = useRouter();
   const [search, setSearch] = useState("");
   const [togglingId, setTogglingId] = useState<string | null>(null);
+  const [localProducts, setLocalProducts] = useState<ProductItem[]>(products);
 
-  const filtered = products.filter((p) =>
+  // Sync with server data when props change (e.g., after navigation or delete)
+  useEffect(() => {
+    setLocalProducts(products);
+  }, [products]);
+
+  const filtered = localProducts.filter((p) =>
     p.name.toLowerCase().includes(search.toLowerCase())
   );
 
   const handleToggle = async (product: ProductItem) => {
     setTogglingId(product.id);
+    const newActive = !product.active;
+
+    // Optimistic update - update UI immediately
+    setLocalProducts((prev) =>
+      prev.map((p) => (p.id === product.id ? { ...p, active: newActive } : p))
+    );
+
     try {
       const res = await fetch(`/api/products/${product.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ active: !product.active }),
+        body: JSON.stringify({ active: newActive }),
       });
-      if (res.ok) {
-        router.refresh();
+      if (!res.ok) {
+        // Revert on failure
+        setLocalProducts((prev) =>
+          prev.map((p) => (p.id === product.id ? { ...p, active: !newActive } : p))
+        );
       }
+    } catch {
+      // Revert on error
+      setLocalProducts((prev) =>
+        prev.map((p) => (p.id === product.id ? { ...p, active: !newActive } : p))
+      );
     } finally {
       setTogglingId(null);
     }
