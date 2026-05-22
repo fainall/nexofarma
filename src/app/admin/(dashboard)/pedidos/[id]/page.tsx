@@ -2,6 +2,7 @@ import { prisma } from "@/lib/prisma";
 import { notFound } from "next/navigation";
 import OrderDetail from "@/components/admin/OrderDetail";
 
+export const dynamic = "force-dynamic";
 export const metadata = { title: "Detalle de Pedido" };
 
 export default async function OrderDetailPage({ params }: { params: { id: string } }) {

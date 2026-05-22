@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ProductForm from "@/components/admin/ProductForm";
 import { Category, Product } from "@/types";
 
+export const dynamic = "force-dynamic";
 export const metadata = { title: "Editar Producto" };
 
 export default async function EditarProductoPage({ params }: { params: { id: string } }) {

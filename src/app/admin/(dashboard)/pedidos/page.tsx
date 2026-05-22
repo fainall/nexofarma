@@ -4,6 +4,7 @@ import { ShoppingBag, Clock, CheckCircle2, Truck } from "lucide-react";
 import { formatCLP } from "@/lib/utils";
 import PedidosFilters from "@/components/admin/PedidosFilters";
 
+export const dynamic = "force-dynamic";
 export const metadata = { title: "Pedidos" };
 
 const statusConfig: Record<string, { label: string; color: string; badge: string }> = {

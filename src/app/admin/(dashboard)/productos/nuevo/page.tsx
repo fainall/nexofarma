@@ -2,6 +2,7 @@ import { prisma } from "@/lib/prisma";
 import ProductForm from "@/components/admin/ProductForm";
 import { Category } from "@/types";
 
+export const dynamic = "force-dynamic";
 export const metadata = { title: "Nuevo Producto" };
 
 export default async function NuevoProductoPage() {

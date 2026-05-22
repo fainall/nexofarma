@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Plus } from "lucide-react";
 import ProductsTable from "@/components/admin/ProductsTable";
 
+export const dynamic = "force-dynamic";
+
 export default async function ProductosPage() {
   const products = await prisma.product.findMany({
     include: { category: true },
