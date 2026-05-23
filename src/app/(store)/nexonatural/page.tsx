@@ -17,6 +17,7 @@ const products = [
     img: "/images/nexonatural/colageno-forte.jpg",
     color: "from-blue-400 to-blue-600",
     benefit: "Piel, cabello y articulaciones",
+    desc: "Suplemento natural con propiedades para la elasticidad e hidratación de la piel. Aporta al tejido cartilaginoso, reduciendo el desgaste de articulaciones y músculos, con impacto positivo en cabello, uñas y piel.",
   },
   {
     name: "Vitamina C",
@@ -25,6 +26,7 @@ const products = [
     img: "/images/nexonatural/vitamina-c.jpg",
     color: "from-orange-400 to-orange-600",
     benefit: "Sistema inmune y antioxidante",
+    desc: "Ácido ascórbico que actúa como antioxidante protegiendo las células contra radicales libres. Fortalece el sistema inmune frente a infecciones, favorece la absorción de hierro y la cicatrización.",
   },
   {
     name: "Vitamina D3",
@@ -33,6 +35,7 @@ const products = [
     img: "/images/nexonatural/vitamina-d3.jpg",
     color: "from-sky-400 to-sky-600",
     benefit: "Huesos y sistema inmune",
+    desc: "Esencial para dientes y huesos fuertes, ya que aumenta la absorción de calcio. Regula el sistema inmunológico y mantiene los músculos y nervios en buena forma. Conocida como la vitamina del sol.",
   },
   {
     name: "Vitamina E 400 UI",
@@ -41,6 +44,7 @@ const products = [
     img: "/images/nexonatural/vitamina-e.jpg",
     color: "from-amber-500 to-amber-700",
     benefit: "Antioxidante y salud celular",
+    desc: "Vitamina liposoluble con potente función antioxidante. Previene el envejecimiento prematuro, posee propiedades cardiovasculares, favorece la cicatrización e impulsa el sistema inmunológico.",
   },
   {
     name: "Vitamina B12",
@@ -49,6 +53,7 @@ const products = [
     img: "/images/nexonatural/vitamina-b12.jpg",
     color: "from-indigo-400 to-indigo-600",
     benefit: "Energía y sistema nervioso",
+    desc: "Cianocobalamina esencial para la síntesis de proteína y ADN. Produce glóbulos rojos, da energía, mantiene sanas las células nerviosas y participa en el metabolismo de grasas y carbohidratos.",
   },
   {
     name: "Complejo B",
@@ -57,6 +62,7 @@ const products = [
     img: "/images/nexonatural/complejo-b.jpg",
     color: "from-red-400 to-red-600",
     benefit: "Metabolismo y vitalidad",
+    desc: "Fórmula completa de Vitaminas B (B1, B2, B3, B5, B6). Contribuye a la función cerebral, metabolización de nutrientes, desarrollo celular, formación de glóbulos rojos y absorción de hierro.",
   },
   {
     name: "Calcio, Magnesio, Zinc + D3",
@@ -65,6 +71,7 @@ const products = [
     img: "/images/nexonatural/calcio-magnesio-zinc-d3.jpg",
     color: "from-amber-400 to-orange-500",
     benefit: "Huesos, músculos y defensas",
+    desc: "Combina nutrientes esenciales para el sistema óseo e inmunológico. El zinc contribuye a la función cardiovascular, la vitamina D fortalece las defensas y el magnesio es clave para los músculos.",
   },
   {
     name: "Magnesio Complex",
@@ -73,6 +80,7 @@ const products = [
     img: "/images/nexonatural/magnesio-complex.jpg",
     color: "from-teal-400 to-teal-600",
     benefit: "Relajación muscular y sueño",
+    desc: "Refuerza la salud cardiovascular y ósea, promueve el metabolismo energético y la función cerebral. Necesario para más de 300 reacciones bioquímicas en el organismo. Apto para veganos.",
   },
   {
     name: "Citrato de Magnesio",
@@ -81,6 +89,7 @@ const products = [
     img: "/images/nexonatural/citrato-magnesio.jpg",
     color: "from-cyan-400 to-cyan-600",
     benefit: "Alta absorción, músculos y nervios",
+    desc: "Esencial para el sistema óseo y la función cardíaca. Regula el ritmo cardíaco, mantiene la presión arterial y actúa en la regulación de neurotransmisores, reduciendo estrés y ansiedad.",
   },
   {
     name: "Pre y Probióticos 50 Billones",
@@ -89,6 +98,7 @@ const products = [
     img: "/images/nexonatural/pre-probioticos.jpg",
     color: "from-pink-300 to-blue-400",
     benefit: "Flora intestinal y digestión",
+    desc: "Fórmula de 5 cepas a 50 billones con Lactobacillus y Bifidobacterium más inulina como prebiótico. Promueve una flora intestinal saludable, mejora la digestión y fortalece el sistema inmunológico.",
   },
   {
     name: "Creatina Monohydrate",
@@ -97,6 +107,7 @@ const products = [
     img: "/images/nexonatural/creatina.jpg",
     color: "from-gray-600 to-gray-800",
     benefit: "Rendimiento deportivo y fuerza",
+    desc: "Molécula de origen proteico con función estructural y energética. Favorece la síntesis de ATP, mejora el rendimiento físico y contribuye al aumento de masa muscular.",
   },
   {
     name: "Berberina",
@@ -105,6 +116,7 @@ const products = [
     img: "/images/nexonatural/berberina.jpg",
     color: "from-pink-400 to-pink-600",
     benefit: "Metabolismo y glucosa",
+    desc: "Compuesto natural extraído del agracejo, usado en medicina tradicional china. Reconocido por su capacidad para apoyar el equilibrio metabólico, especialmente en glucosa y metabolismo.",
   },
   {
     name: "Maqui",
@@ -113,6 +125,7 @@ const products = [
     img: "/images/nexonatural/maqui.jpg",
     color: "from-purple-500 to-purple-700",
     benefit: "Superantioxidante chileno",
+    desc: "Excelente fuente de antioxidantes, polifenoles y antocianinas, con Vitamina C, Calcio, Hierro y Potasio. Promueve la salud cardiovascular y aporta fibras para la salud intestinal y renal.",
   },
   {
     name: "Té Verde + Vinagre de Manzana",
@@ -121,6 +134,7 @@ const products = [
     img: "/images/nexonatural/te-verde-vinagre.jpg",
     color: "from-green-400 to-green-600",
     benefit: "Control de peso y metabolismo",
+    desc: "Fórmula ideal como coadyuvante para el colesterol y la retención de líquidos. El vinagre de manzana absorbe toxinas del metabolismo y el té verde actúa como quemador natural de grasa.",
   },
   {
     name: "Vitacolon",
@@ -129,6 +143,7 @@ const products = [
     img: "/images/nexonatural/vitacolon.jpg",
     color: "from-fuchsia-400 to-fuchsia-600",
     benefit: "Salud digestiva y colon",
+    desc: "Compuesto por manzanilla, aloe vera, bailahuén, jengibre y anís. Promueve digestión equilibrada, previene hinchazón y gases, actúa como antiinflamatorio y favorece la desintoxicación.",
   },
 ];
 
@@ -263,11 +278,11 @@ export default function NexoNaturalPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {products.map((product) => (
               <div
                 key={product.name}
-                className="group bg-white rounded-2xl sm:rounded-3xl border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500"
+                className="group bg-white rounded-2xl sm:rounded-3xl border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-500"
               >
                 {/* Product image */}
                 <div className="relative aspect-square bg-gradient-to-b from-gray-50 to-white overflow-hidden">
@@ -276,8 +291,8 @@ export default function NexoNaturalPage() {
                     src={product.img}
                     alt={product.name}
                     fill
-                    className="object-contain p-3 sm:p-5 group-hover:scale-110 transition-transform duration-700"
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                    className="object-contain p-4 sm:p-6 group-hover:scale-105 transition-transform duration-700"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
 
@@ -285,14 +300,19 @@ export default function NexoNaturalPage() {
                 <div className={`h-1 bg-gradient-to-r ${product.color}`} />
 
                 {/* Info */}
-                <div className="p-3 sm:p-4">
-                  <h3 className="font-bold text-xs sm:text-sm text-gray-800 mb-1 leading-tight">{product.name}</h3>
-                  <p className="text-[10px] sm:text-xs text-gray-400 mb-2">
-                    {product.dosage} · {product.caps}
+                <div className="p-4 sm:p-5">
+                  <div className="flex items-start justify-between gap-2 mb-2">
+                    <h3 className="font-bold text-sm sm:text-base text-gray-800 leading-tight">{product.name}</h3>
+                    <span className="text-[10px] sm:text-xs text-gray-400 shrink-0 mt-0.5">
+                      {product.dosage} · {product.caps}
+                    </span>
+                  </div>
+                  <p className="text-xs sm:text-sm text-gray-500 leading-relaxed mb-3">
+                    {product.desc}
                   </p>
-                  <div className="flex items-center gap-1.5">
-                    <Heart className="w-3 h-3 text-emerald-500 shrink-0" />
-                    <span className="text-[10px] sm:text-xs text-emerald-600 font-medium leading-tight">
+                  <div className="flex items-center gap-1.5 pt-2 border-t border-gray-100">
+                    <Heart className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                    <span className="text-xs sm:text-sm text-emerald-600 font-semibold leading-tight">
                       {product.benefit}
                     </span>
                   </div>
