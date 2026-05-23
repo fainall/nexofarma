@@ -66,8 +66,9 @@ const categoryGroups: Record<string, { label: string; slugs: string[] }> = {
 };
 
 /* ─── Navigation links ─── */
-const navLinks = [
+const navLinks: { href: string; label: string; highlight?: boolean }[] = [
   { href: "/", label: "Inicio" },
+  { href: "/nexonatural", label: "NexoNaturals", highlight: true },
   { href: "/contacto", label: "Contacto" },
 ];
 
@@ -210,8 +211,14 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="px-4 py-2 text-sm font-semibold text-gray-600 hover:text-corp-cian transition-colors uppercase tracking-wide rounded-lg hover:bg-gray-50"
+                  className={cn(
+                    "px-4 py-2 text-sm font-semibold transition-colors uppercase tracking-wide rounded-lg",
+                    link.highlight
+                      ? "text-emerald-700 hover:text-emerald-600 hover:bg-emerald-50 flex items-center gap-1.5"
+                      : "text-gray-600 hover:text-corp-cian hover:bg-gray-50"
+                  )}
                 >
+                  {link.highlight && <Leaf className="w-3.5 h-3.5" />}
                   {link.label}
                 </Link>
               ))}
@@ -434,6 +441,16 @@ export default function Navbar() {
               className="block px-4 py-3 text-sm font-semibold text-gray-700 hover:bg-corp-verde/5 hover:text-corp-cian rounded-xl transition-colors uppercase tracking-wide"
             >
               Inicio
+            </Link>
+
+            {/* NexoNaturals */}
+            <Link
+              href="/nexonatural"
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center gap-2 px-4 py-3 text-sm font-semibold text-emerald-700 hover:bg-emerald-50 rounded-xl transition-colors uppercase tracking-wide"
+            >
+              <Leaf className="w-4 h-4" />
+              NexoNaturals
             </Link>
 
             {/* Tienda with expandable categories */}

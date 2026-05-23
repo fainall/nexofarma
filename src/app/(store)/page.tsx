@@ -3,6 +3,7 @@ import AnnouncementRibbon from "@/components/home/AnnouncementRibbon";
 import TrustBar from "@/components/home/TrustBar";
 import CategoryGrid from "@/components/home/CategoryGrid";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
+import NexoNaturalSection from "@/components/home/NexoNaturalSection";
 import SociosSection from "@/components/home/SociosSection";
 import LocationSection from "@/components/home/LocationSection";
 import NewsletterSection from "@/components/home/NewsletterSection";
@@ -16,6 +17,7 @@ export default function HomePage() {
       <TrustBar />
       <CategoryGrid />
       <FeaturedProducts />
+      <NexoNaturalSection />
       <SociosSection />
       <LocationSection />
       <NewsletterSection />

@@ -37,6 +37,7 @@ export default function Footer() {
               {[
                 { href: "/", label: "Inicio" },
                 { href: "/tienda", label: "Tienda" },
+                { href: "/nexonatural", label: "NexoNaturals" },
                 { href: "/contacto", label: "Contacto" },
               ].map((link) => (
                 <li key={link.href}>
