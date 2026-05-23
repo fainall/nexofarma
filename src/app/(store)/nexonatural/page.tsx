@@ -209,7 +209,7 @@ export default function NexoNaturalPage() {
               <div className="relative aspect-square">
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-400/20 to-teal-400/20 rounded-full blur-2xl" />
                 <Image
-                  src="/images/nexonatural/logo.jpeg"
+                  src="/images/nexonatural/logo.png"
                   alt="NexoNaturals — Conecta con lo Natural"
                   fill
                   className="object-contain rounded-3xl relative z-10"
