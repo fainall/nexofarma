@@ -37,7 +37,7 @@ export default function LocationSection() {
                 </div>
                 <div>
                   <h5 className="font-bold text-sm uppercase text-text-title mb-1">Horarios</h5>
-                  <p className="text-sm text-gray-500">Lun - Sáb: 09:00 - 21:00 hrs.<br />Dom y Festivos: 10:00 - 20:00 hrs.</p>
+                  <p className="text-sm text-gray-500">Lun - Vie: 09:30 - 21:00 hrs.<br />Sáb - Dom: 10:00 - 19:00 hrs.</p>
                 </div>
               </div>
             </div>
