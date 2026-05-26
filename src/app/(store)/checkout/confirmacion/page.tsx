@@ -34,7 +34,7 @@ export default function ConfirmacionPage({ searchParams }: Props) {
           Seguir Comprando
         </Link>
         <a
-          href={`https://wa.me/56963016418?text=Hola%2C%20quiero%20consultar%20por%20mi%20pedido%20${orderNumber}`}
+          href={`https://wa.me/56994055489?text=Hola%2C%20quiero%20consultar%20por%20mi%20pedido%20${orderNumber}`}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-gradient-outline"

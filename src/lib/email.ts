@@ -47,7 +47,7 @@ function baseTemplate(title: string, content: string) {
   </td></tr>
   <tr><td style="background:#f9fafb;padding:20px 32px;text-align:center;border-top:1px solid #e5e7eb;">
     <p style="margin:0;color:#9ca3af;font-size:12px;">NexoFarma &bull; Av. La Compañía 01661, Rancagua</p>
-    <p style="margin:4px 0 0;color:#9ca3af;font-size:12px;">+56 963 301 6418 &bull; contacto@nexofarma.cl</p>
+    <p style="margin:4px 0 0;color:#9ca3af;font-size:12px;">+56 994 055 489 &bull; contacto@nexofarma.cl</p>
   </td></tr>
 </table>
 </td></tr>
@@ -101,7 +101,7 @@ export async function sendOrderConfirmation(order: OrderEmailData) {
       <p style="margin:0;font-size:14px;color:#374151;">${order.shippingAddress}<br>${order.shippingCity}, ${order.shippingRegion}</p>
     </div>
     <p style="color:#6b7280;font-size:13px;line-height:1.6;">
-      Te notificaremos cuando tu pedido sea confirmado y despachado. Si tienes dudas, contáctanos por WhatsApp al +56 963 301 6418.
+      Te notificaremos cuando tu pedido sea confirmado y despachado. Si tienes dudas, contáctanos por WhatsApp al +56 994 055 489.
     </p>`;
 
   await transporter.sendMail({
@@ -179,7 +179,7 @@ export async function sendOrderDelivered(order: OrderEmailData) {
       </p>
     </div>
     <p style="color:#6b7280;font-size:13px;line-height:1.6;">
-      Tu opinión es importante. Escríbenos por WhatsApp al +56 963 301 6418 o síguenos en <a href="https://www.instagram.com/nexofarma" style="color:#00847e;">Instagram</a>.
+      Tu opinión es importante. Escríbenos por WhatsApp al +56 994 055 489 o síguenos en <a href="https://www.instagram.com/nexofarma" style="color:#00847e;">Instagram</a>.
     </p>`;
 
   await transporter.sendMail({

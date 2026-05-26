@@ -172,7 +172,7 @@ export default function Navbar() {
             <div className="flex items-center gap-6 text-[11px] text-white/90 font-medium">
               <span>📍 Av. La Compañía 01661, Rancagua</span>
               <span className="w-px h-3 bg-white/30" />
-              <span>📱 +56 963 301 6418</span>
+              <span>📱 +56 994 055 489</span>
             </div>
             <div className="flex items-center gap-4 text-[11px] text-white/90 font-medium">
               <a

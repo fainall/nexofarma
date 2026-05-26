@@ -52,7 +52,7 @@ export default function ProductDetailClient({ product, relatedProducts }: Props)
           <p className="text-gray-600 leading-relaxed mb-8">{product.description}</p>
 
           <a
-            href={`https://wa.me/56963016418?text=${encodeURIComponent(`Hola NexoFarma, me interesa el producto: ${product.name}`)}`}
+            href={`https://wa.me/56994055489?text=${encodeURIComponent(`Hola NexoFarma, me interesa el producto: ${product.name}`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gradient py-4 text-base w-full sm:w-auto inline-flex items-center justify-center gap-2"

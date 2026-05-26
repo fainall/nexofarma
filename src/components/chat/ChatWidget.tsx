@@ -161,7 +161,7 @@ export default function ChatWidget() {
         ...prev,
         {
           role: "assistant",
-          content: "Lo siento, hubo un error al procesar tu consulta. Intenta nuevamente o contáctanos por **WhatsApp** al **+56 963 301 6418**.",
+          content: "Lo siento, hubo un error al procesar tu consulta. Intenta nuevamente o contáctanos por **WhatsApp** al **+56 994 055 489**.",
         },
       ]);
     } finally {

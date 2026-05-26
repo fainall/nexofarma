@@ -20,7 +20,7 @@ Reglas estrictas:
 NexoFarma:
 - Ubicación: Av. La Compañía 01661, Rancagua
 - Horario: Lun-Sáb 09:00-21:00, Dom 10:00-20:00
-- WhatsApp: +56 963 301 6418
+- WhatsApp: +56 994 055 489
 - Despacho a todo Chile
 - Categorías: Medicamentos, Dermocosmética, Vitaminas y Suplementos, Cuidado Personal
 - Servicios: Atención farmacéutica personalizada, despacho 24h en Rancagua, toma de presión, asesoría en medicamentos`;
@@ -425,7 +425,7 @@ Tenemos protectores de las mejores marcas en NexoFarma. ¿Necesitas recomendaci�
 • **Domingos y Festivos:** 10:00 - 20:00 hrs
 
 📍 **Dirección:** Av. La Compañía 01661, Rancagua
-📱 **WhatsApp:** +56 963 301 6418
+📱 **WhatsApp:** +56 994 055 489
 
 También puedes comprar en nuestra **tienda online** con despacho a todo Chile 🇨🇱
 
@@ -439,7 +439,7 @@ También puedes comprar en nuestra **tienda online** con despacho a todo Chile �
 **Av. La Compañía 01661, Rancagua, Chile**
 
 • **Horario:** Lun-Sáb 09:00-21:00 | Dom 10:00-20:00
-• **WhatsApp:** +56 963 301 6418
+• **WhatsApp:** +56 994 055 489
 • **Despacho:** A todo Chile 🇨🇱
 • Puedes venir en auto (estacionamiento disponible) o en locomoción
 
@@ -456,7 +456,7 @@ También puedes comprar en nuestra **tienda online** con despacho a todo Chile �
 
 **¿Cómo comprar?**
 • A través de nuestra **tienda online** (www.nexofarma.cl)
-• Por **WhatsApp:** +56 963 301 6418
+• Por **WhatsApp:** +56 994 055 489
 • Presencialmente en nuestra farmacia
 
 ¿Hay algo más en lo que pueda ayudarte?`,
@@ -466,7 +466,7 @@ También puedes comprar en nuestra **tienda online** con despacho a todo Chile �
     priority: 12,
     response: `📱 **Contacto NexoFarma:**
 
-• **WhatsApp:** +56 963 301 6418
+• **WhatsApp:** +56 994 055 489
 • **Dirección:** Av. La Compañía 01661, Rancagua
 • **Horario atención:** Lun-Sáb 09:00-21:00 | Dom 10:00-20:00
 
@@ -544,7 +544,7 @@ Soy tu Químico Farmacéutico virtual y puedo ayudarte con:
 Recuerda que en **NexoFarma** estamos para cuidar tu salud. Si tienes más dudas, no dudes en escribirme.
 
 📍 Visítanos en Av. La Compañía 01661, Rancagua
-📱 WhatsApp: +56 963 301 6418
+📱 WhatsApp: +56 994 055 489
 
 ¡Que tengas un excelente día! 💚`,
   },
@@ -555,7 +555,7 @@ Recuerda que en **NexoFarma** estamos para cuidar tu salud. Si tienes más dudas
 
 Recuerda que puedes volver a consultarme cuando lo necesites. En **NexoFarma** estamos siempre disponibles para ti.
 
-📱 WhatsApp: +56 963 301 6418
+📱 WhatsApp: +56 994 055 489
 💊 Cuida tu salud, cuida a tu familia 💚`,
   },
   // ──── EMERGENCIAS / TEMAS SENSIBLES ────
@@ -663,7 +663,7 @@ const FALLBACK_RESPONSE = `No tengo información específica sobre eso, pero pue
 • 🧴 **Piel** — Protección solar, acné, heridas
 • 🏪 **NexoFarma** — Horarios, ubicación, despacho, servicios
 
-Para consultas más específicas, contáctanos por **WhatsApp** al **+56 963 301 6418** o visítanos en la farmacia. 💚`;
+Para consultas más específicas, contáctanos por **WhatsApp** al **+56 994 055 489** o visítanos en la farmacia. 💚`;
 
 export async function POST(req: NextRequest) {
   try {
@@ -710,7 +710,7 @@ export async function POST(req: NextRequest) {
     console.error("Chat API error:", error);
     return NextResponse.json({
       content:
-        "Lo siento, hubo un error al procesar tu consulta. Contáctanos por **WhatsApp** al **+56 963 301 6418**.",
+        "Lo siento, hubo un error al procesar tu consulta. Contáctanos por **WhatsApp** al **+56 994 055 489**.",
     });
   }
 }

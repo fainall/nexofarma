@@ -75,7 +75,7 @@ export default function ContactoPage() {
         <div className="space-y-4">
           {[
             { icon: MapPin, title: "Dirección", text: "Av. La Compañía 01661\nRancagua, O'Higgins" },
-            { icon: Phone, title: "Teléfono", text: "+56 963 301 6418" },
+            { icon: Phone, title: "Teléfono", text: "+56 994 055 489" },
             { icon: Mail, title: "Email", text: "contacto@nexofarma.cl" },
             { icon: Clock, title: "Horarios", text: "Lun-Vie: 09:30-21:00\nSáb-Dom: 10:00-19:00" },
           ].map((item) => (

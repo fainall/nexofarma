@@ -79,7 +79,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Phone className="w-4 h-4 text-corp-verde shrink-0" />
-                <span>+56 963 301 6418</span>
+                <span>+56 994 055 489</span>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Mail className="w-4 h-4 text-corp-verde shrink-0" />

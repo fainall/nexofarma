@@ -349,7 +349,7 @@ export default function NexoNaturalPage() {
 
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a
-                  href="https://wa.me/569633016418?text=Hola!%20Me%20interesan%20los%20productos%20NexoNaturals"
+                  href="https://wa.me/56994055489?text=Hola!%20Me%20interesan%20los%20productos%20NexoNaturals"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-green-500 hover:bg-green-400 text-white font-bold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/30 text-sm sm:text-base"
