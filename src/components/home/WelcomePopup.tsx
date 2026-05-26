@@ -44,7 +44,7 @@ export default function WelcomePopup() {
         />
 
         <h3 className="text-2xl font-black uppercase tracking-tight mb-2" style={{ color: "var(--color-text-title)" }}>
-          ¡Ya estamos abiertos!
+          ¡Ya aperturamos!
         </h3>
         <p className="text-gray-500 text-sm leading-relaxed mb-6">
           Tu nueva farmacia de confianza en Rancagua ya abrió sus puertas. Descubre nuestros productos y aprovecha un <strong className="text-corp-cian">10% de descuento</strong> en tu primera compra.
