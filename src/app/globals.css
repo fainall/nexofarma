@@ -908,6 +908,28 @@ body {
   50% { box-shadow: 0 8px 35px rgba(0, 144, 143, 0.5), 0 0 0 4px rgba(0, 196, 179, 0.1); }
 }
 
+/* Confeti del popup de inauguración */
+.confetti-piece {
+  position: absolute;
+  top: -16px;
+  border-radius: 2px;
+  opacity: 0;
+  animation-name: confettiFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes confettiFall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+  12% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { transform: translateY(230px) rotate(680deg); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .confetti-piece { animation: none; opacity: 0.55; }
+}
+
 /* Wave separator */
 .hero-wave {
   position: absolute;
