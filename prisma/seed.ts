@@ -5,6 +5,27 @@ import * as path from "path";
 
 const prisma = new PrismaClient();
 
+/**
+ * Credenciales del administrador.
+ *
+ * Se exigen por variable de entorno a proposito: este repositorio es publico,
+ * asi que ninguna clave puede vivir en el codigo. Si faltan, el seed se detiene.
+ */
+function adminCredentials() {
+  const email = process.env.ADMIN_EMAIL;
+  const password = process.env.ADMIN_PASSWORD;
+
+  if (!email || !password) {
+    throw new Error(
+      "Faltan ADMIN_EMAIL y/o ADMIN_PASSWORD. Definelas en el entorno antes de ejecutar el seed."
+    );
+  }
+  if (password.length < 16) {
+    throw new Error("ADMIN_PASSWORD debe tener al menos 16 caracteres.");
+  }
+  return { email, password };
+}
+
 async function main() {
   const dataPath = path.join(__dirname, "seed-data.json");
 
@@ -68,12 +89,13 @@ async function main() {
     console.log(`  ${data.products.length} products seeded`);
 
     // Seed admin user
-    const passwordHash = await hash("NexoFarma2024!", 12);
+    const admin = adminCredentials();
+    const passwordHash = await hash(admin.password, 12);
     await prisma.user.upsert({
-      where: { email: "admin@nexofarma.cl" },
+      where: { email: admin.email },
       update: {},
       create: {
-        email: "admin@nexofarma.cl",
+        email: admin.email,
         name: "Administrador",
         passwordHash,
         role: "admin",
@@ -84,12 +106,13 @@ async function main() {
     // Minimal seed (no data file)
     console.log("No seed-data.json found, creating minimal seed...");
 
-    const passwordHash = await hash(process.env.ADMIN_PASSWORD || "NexoFarma2024!", 12);
+    const admin = adminCredentials();
+    const passwordHash = await hash(admin.password, 12);
     await prisma.user.upsert({
-      where: { email: process.env.ADMIN_EMAIL || "admin@nexofarma.cl" },
+      where: { email: admin.email },
       update: {},
       create: {
-        email: process.env.ADMIN_EMAIL || "admin@nexofarma.cl",
+        email: admin.email,
         name: "Administrador",
         passwordHash,
         role: "admin",

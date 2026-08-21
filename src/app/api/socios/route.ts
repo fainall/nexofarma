@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { requireAdmin } from "@/lib/apiAuth";
 
 // Validar RUT chileno
 function validarRut(rut: string): boolean {
@@ -99,6 +100,9 @@ export async function POST(req: NextRequest) {
 
 // GET - Listar socios (admin)
 export async function GET(req: NextRequest) {
+  const denied = await requireAdmin();
+  if (denied) return denied;
+
   try {
     const { searchParams } = new URL(req.url);
     const page = parseInt(searchParams.get("page") || "1");

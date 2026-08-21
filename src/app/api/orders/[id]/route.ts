@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { requireAdmin } from "@/lib/apiAuth";
 import {
   sendOrderConfirmed,
   sendOrderShipped,
@@ -8,6 +9,9 @@ import {
 } from "@/lib/email";
 
 export async function GET(_req: NextRequest, { params }: { params: { id: string } }) {
+  const denied = await requireAdmin();
+  if (denied) return denied;
+
   try {
     const order = await prisma.order.findUnique({
       where: { id: params.id },
@@ -24,6 +28,9 @@ export async function GET(_req: NextRequest, { params }: { params: { id: string 
 }
 
 export async function PATCH(req: NextRequest, { params }: { params: { id: string } }) {
+  const denied = await requireAdmin();
+  if (denied) return denied;
+
   try {
     const body = await req.json();
     const { status, trackingNumber, trackingUrl, qfNotes, invoiceUrl, statusNote, sendInvoiceEmail } = body;

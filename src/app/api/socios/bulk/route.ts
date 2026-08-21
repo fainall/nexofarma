@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { requireAdmin } from "@/lib/apiAuth";
 
 function cleanRut(rut: string): string {
   return rut.replace(/[^0-9kK]/g, "").toUpperCase();
@@ -31,6 +32,9 @@ function validarRut(rut: string): boolean {
 }
 
 export async function POST(req: NextRequest) {
+  const denied = await requireAdmin();
+  if (denied) return denied;
+
   try {
     const body = await req.json();
     const { socios } = body;
