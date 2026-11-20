@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Leaf, ArrowRight, Sparkles } from "lucide-react";
+import { NEXONATURALS_DISPONIBLE } from "@/lib/nexonaturals";
 
 const featuredProducts = [
   { name: "Colágeno Forte", desc: "575mg · 60 cápsulas", img: "/images/nexonatural/colageno-forte.jpg" },
@@ -37,6 +38,14 @@ export default function NexoNaturalSection() {
         </div>
 
         {/* Logo + Products grid */}
+        {!NEXONATURALS_DISPONIBLE ? (
+          <div className="max-w-xl mx-auto mb-10 p-6 sm:p-8 bg-white rounded-2xl sm:rounded-3xl border border-emerald-100 shadow-sm text-center">
+            <p className="text-xl sm:text-2xl font-black uppercase tracking-tight text-emerald-700 mb-1">
+              Próximamente
+            </p>
+            <p className="text-sm text-gray-500">Muy pronto volveremos con nuestra línea de productos naturales.</p>
+          </div>
+        ) : (
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-10">
           {featuredProducts.map((product) => (
             <div
@@ -60,6 +69,7 @@ export default function NexoNaturalSection() {
             </div>
           ))}
         </div>
+        )}
 
         {/* Badges + CTA */}
         <div className="text-center">
@@ -79,7 +89,7 @@ export default function NexoNaturalSection() {
             className="group inline-flex items-center gap-2.5 px-7 py-3.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25 text-sm sm:text-base"
           >
             <Leaf className="w-5 h-5" />
-            Ver toda la línea NexoNaturals
+            {NEXONATURALS_DISPONIBLE ? "Ver toda la línea NexoNaturals" : "Conoce NexoNaturals"}
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

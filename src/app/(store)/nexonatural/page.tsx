@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Leaf, Shield, Sparkles, Heart, ArrowLeft, Droplets, Wheat, Dumbbell } from "lucide-react";
 import type { Metadata } from "next";
+import { NEXONATURALS_DISPONIBLE } from "@/lib/nexonaturals";
 
 export const metadata: Metadata = {
   title: "NexoNaturals — Suplementos Naturales | NexoFarma",
@@ -215,8 +216,9 @@ export default function NexoNaturalPage() {
                 formulados con lo mejor de la naturaleza.
               </p>
               <p className="text-sm text-emerald-200/60 max-w-lg">
-                15 productos diseñados para tu bienestar, con ingredientes puros y
-                fórmulas limpias que cuidan de ti y de tu familia.
+                {NEXONATURALS_DISPONIBLE
+                  ? "15 productos diseñados para tu bienestar, con ingredientes puros y fórmulas limpias que cuidan de ti y de tu familia."
+                  : "Muy pronto volveremos con nuestra línea de productos naturales."}
               </p>
             </div>
 
@@ -267,6 +269,21 @@ export default function NexoNaturalPage() {
       </section>
 
       {/* Products Grid */}
+      {!NEXONATURALS_DISPONIBLE ? (
+        <section className="py-12 sm:py-20 bg-gray-50/50">
+          <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
+            <div className="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg shadow-emerald-500/20">
+              <Sparkles className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black uppercase tracking-tight text-gray-900 mb-3">
+              Próximamente
+            </h2>
+            <p className="text-gray-500 text-sm sm:text-base">
+              Estamos preparando nuestra línea NexoNaturals. Muy pronto podrás conocer todos sus productos aquí.
+            </p>
+          </div>
+        </section>
+      ) : (
       <section className="py-12 sm:py-20 bg-gray-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-14">
@@ -322,6 +339,7 @@ export default function NexoNaturalPage() {
           </div>
         </div>
       </section>
+      )}
 
       {/* CTA Section */}
       <section className="py-12 sm:py-20">
@@ -340,11 +358,12 @@ export default function NexoNaturalPage() {
                 <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-emerald-300" />
               </div>
               <h3 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-tight mb-3">
-                ¿Te interesa algún producto?
+                {NEXONATURALS_DISPONIBLE ? "¿Te interesa algún producto?" : "¿Quieres saber cuándo llega?"}
               </h3>
               <p className="text-emerald-100/70 max-w-lg mx-auto mb-8 text-sm sm:text-base">
-                Visítanos en nuestra farmacia o escríbenos por WhatsApp para consultar
-                disponibilidad y precios de toda la línea NexoNaturals.
+                {NEXONATURALS_DISPONIBLE
+                  ? "Visítanos en nuestra farmacia o escríbenos por WhatsApp para consultar disponibilidad y precios de toda la línea NexoNaturals."
+                  : "Escríbenos por WhatsApp y te avisamos cuando la línea NexoNaturals esté disponible."}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
