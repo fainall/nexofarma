@@ -5,10 +5,11 @@ import ProductDetailClient from "@/components/shop/ProductDetailClient";
 import { Product } from "@/types";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
   const product = await prisma.product.findUnique({
     where: { slug: params.slug },
   });
@@ -19,7 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function ProductPage({ params }: Props) {
+export default async function ProductPage(props: Props) {
+  const params = await props.params;
   const product = await prisma.product.findUnique({
     where: { slug: params.slug },
     include: { category: true },

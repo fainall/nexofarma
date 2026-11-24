@@ -2,12 +2,13 @@ import Link from "next/link";
 import { CheckCircle, ShoppingBag, MessageCircle } from "lucide-react";
 
 interface Props {
-  searchParams: { pedido?: string };
+  searchParams: Promise<{ pedido?: string }>;
 }
 
 export const metadata = { title: "Pedido Confirmado" };
 
-export default function ConfirmacionPage({ searchParams }: Props) {
+export default async function ConfirmacionPage(props: Props) {
+  const searchParams = await props.searchParams;
   const orderNumber = searchParams.pedido || "---";
 
   return (

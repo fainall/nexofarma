@@ -8,7 +8,8 @@ import {
   sendInvoice,
 } from "@/lib/email";
 
-export async function GET(_req: NextRequest, { params }: { params: { id: string } }) {
+export async function GET(_req: NextRequest, props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const denied = await requireAdmin();
   if (denied) return denied;
 
@@ -27,7 +28,8 @@ export async function GET(_req: NextRequest, { params }: { params: { id: string 
   }
 }
 
-export async function PATCH(req: NextRequest, { params }: { params: { id: string } }) {
+export async function PATCH(req: NextRequest, props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const denied = await requireAdmin();
   if (denied) return denied;
 

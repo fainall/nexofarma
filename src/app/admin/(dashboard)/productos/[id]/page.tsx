@@ -6,7 +6,8 @@ import { Category, Product } from "@/types";
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Editar Producto" };
 
-export default async function EditarProductoPage({ params }: { params: { id: string } }) {
+export default async function EditarProductoPage(props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const product = await prisma.product.findUnique({
     where: { id: params.id },
     include: { category: true },

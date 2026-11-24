@@ -2,6 +2,11 @@ import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { compare } from "bcryptjs";
 import { prisma } from "./prisma";
+import { hit, isBlocked, reset } from "./rateLimit";
+
+// Bloqueo por cuenta: tras 10 claves erróneas, la cuenta queda bloqueada 15 minutos.
+const MAX_FALLOS = 10;
+const BLOQUEO_MS = 15 * 60_000;
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -14,14 +19,19 @@ export const authOptions: NextAuthOptions = {
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) return null;
 
+        const key = `login|${credentials.email.trim().toLowerCase()}`;
+        if (isBlocked(key, MAX_FALLOS)) return null;
+
         const user = await prisma.user.findUnique({
           where: { email: credentials.email },
         });
 
-        if (!user) return null;
-
-        const isValid = await compare(credentials.password, user.passwordHash);
-        if (!isValid) return null;
+        const isValid = user ? await compare(credentials.password, user.passwordHash) : false;
+        if (!user || !isValid) {
+          hit(key, MAX_FALLOS, BLOQUEO_MS);
+          return null;
+        }
+        reset(key);
 
         return {
           id: user.id,
@@ -34,6 +44,7 @@ export const authOptions: NextAuthOptions = {
   ],
   session: {
     strategy: "jwt",
+    maxAge: 8 * 60 * 60, // la sesión del panel expira a las 8 horas
   },
   pages: {
     signIn: "/admin/login",

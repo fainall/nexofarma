@@ -3,7 +3,8 @@ import { writeFile, mkdir } from "fs/promises";
 import path from "path";
 import { requireAdmin } from "@/lib/apiAuth";
 
-export async function POST(req: NextRequest, { params }: { params: { id: string } }) {
+export async function POST(req: NextRequest, props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const denied = await requireAdmin();
   if (denied) return denied;
 

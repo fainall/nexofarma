@@ -5,7 +5,8 @@ import OrderDetail from "@/components/admin/OrderDetail";
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Detalle de Pedido" };
 
-export default async function OrderDetailPage({ params }: { params: { id: string } }) {
+export default async function OrderDetailPage(props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   let order;
   try {
     order = await prisma.order.findUnique({

@@ -4,7 +4,7 @@ import ProductCard from "@/components/shop/ProductCard";
 import ShopFilters from "@/components/shop/ShopFilters";
 
 interface Props {
-  searchParams: { categoria?: string; buscar?: string; orden?: string };
+  searchParams: Promise<{ categoria?: string; buscar?: string; orden?: string }>;
 }
 
 export const metadata = {
@@ -12,7 +12,8 @@ export const metadata = {
   description: "Explora nuestro catálogo de medicamentos, dermocosmética, vitaminas y cuidado personal.",
 };
 
-export default async function TiendaPage({ searchParams }: Props) {
+export default async function TiendaPage(props: Props) {
+  const searchParams = await props.searchParams;
   const { categoria, buscar, orden } = searchParams;
 
   const where: Record<string, unknown> = { active: true };

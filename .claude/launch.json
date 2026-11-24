@@ -4,9 +4,24 @@
     {
       "name": "Next.js Dev Server",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
       "port": 3000,
       "autoPort": true
+    },
+    {
+      "name": "Produccion local (server.js)",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "server.js"
+      ],
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": "3100"
+      },
+      "port": 3100
     }
   ]
 }

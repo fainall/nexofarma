@@ -3,7 +3,8 @@ import { prisma } from "@/lib/prisma";
 import { slugify } from "@/lib/utils";
 import { requireAdmin } from "@/lib/apiAuth";
 
-export async function GET(_req: NextRequest, { params }: { params: { id: string } }) {
+export async function GET(_req: NextRequest, props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   try {
     const product = await prisma.product.findUnique({
       where: { id: params.id },
@@ -16,7 +17,8 @@ export async function GET(_req: NextRequest, { params }: { params: { id: string 
   }
 }
 
-export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
+export async function PUT(req: NextRequest, props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const denied = await requireAdmin();
   if (denied) return denied;
 
@@ -50,7 +52,8 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
   }
 }
 
-export async function DELETE(_req: NextRequest, { params }: { params: { id: string } }) {
+export async function DELETE(_req: NextRequest, props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const denied = await requireAdmin();
   if (denied) return denied;
 

@@ -16,11 +16,12 @@ const statusConfig: Record<string, { label: string; color: string; badge: string
   cancelado: { label: "Cancelado", color: "text-red-700", badge: "bg-red-100 text-red-800" },
 };
 
-export default async function PedidosPage({
-  searchParams,
-}: {
-  searchParams: { status?: string; q?: string };
-}) {
+export default async function PedidosPage(
+  props: {
+    searchParams: Promise<{ status?: string; q?: string }>;
+  }
+) {
+  const searchParams = await props.searchParams;
   const where: Record<string, unknown> = {};
 
   if (searchParams.status && searchParams.status !== "todos") {
